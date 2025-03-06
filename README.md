@@ -1,15 +1,18 @@
 # GitHub Repository Fetcher (Quarkus + Mutiny)
 
 ## 🚀 Introduction
+
 This project is a **Quarkus-based REST API** that retrieves a list of repositories from GitHub for a given username. The API is built using **Quarkus, Mutiny (reactive programming), and GitHub API (org.kohsuke.github)**.
 
 ## 🛠 Technologies Used
+
 - **Quarkus** (RESTEasy Reactive, Mutiny)
 - **GitHub API (org.kohsuke.github)**
 - **JUnit 5 & RestAssured** (for testing)
-- **Maven** (for dependency management)
+- **Gradle** (for dependency management)
 
 ## 📌 Features
+
 - Fetch all repositories for a given GitHub username.
 - Retrieve branch details for each repository, including **branch name** and **last commit SHA**.
 - Return **404 Not Found** when the user does not exist.
@@ -42,17 +45,10 @@ GET /github/{username}
 }
 ```
 
-#### ❌ Internal Server Error (500)
-```json
-{
-  "message": "Failed to fetch repositories due to an internal error."
-}
-```
-
 ## 🚦 Running the Project
 ### 🔹 Prerequisites
 - Java 17+
-- Maven
+- Gradle
 
 ### 🔹 Running Locally
 ```sh
